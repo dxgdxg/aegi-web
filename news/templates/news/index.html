@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {% load i18n %}
+    <title>{% trans "安吉康尔 | 媒体新闻" %}</title>
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static "news/news.css" %}?time={% now "YmdHi" %}">
+    <div id="news">
+        <div class="container">
+            <div id="newswrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="newsitem">
+                            <div class="title">
+                                媒体新闻
+                            </div>
+                            <div class="newscontent">
+                                {% for newsItem in news %}
+                                    <div class="newItem" id="{{ forloop.counter }}">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <img src="{% static "img/new1.png" %}">
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="title">
+                                                    <a href="{% url 'news:detail' id=newsItem.newsId %}"><span
+                                                            class="title">{{ newsItem.title }}</span></a>
+                                                </div>
+                                                <div class="time">
+                                                    {{ newsItem.time|date:"d F, Y" }}
+                                                </div>
+
+                                                <div class="abstract">
+                                                    {{ newsItem.abstract }}
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <hr>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,382 @@
+/*
+Author: Frank
+Time: 20170225
+Description: for team page
+*/
+
+#team {
+    margin-top: 80px;
+}
+
+#team .teamwrapper {
+    background-color: white;
+    padding: 40px 60px;
+}
+
+#team .teamwrapper #teammember {
+    line-height: 2;
+}
+
+#team .address, #team .address a {
+    background-color: #1BA8B7;
+    color: white;
+    font-size: 120%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#team .teamTitle {
+    text-align: center;
+    font-size: 140%;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.card {
+    background: #fff;
+    max-width: 1080px;
+    margin: 30px auto 0;
+}
+
+.card__inner {
+    padding: 0px 40px;
+}
+
+.card__content {
+    margin-top: 30px;
+}
+
+.profiles {
+    margin-top: 30px;
+}
+
+.profile {
+    position: relative;
+    height: 200px;
+    background: #fff;
+    overflow: hidden;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 22.75%;
+    margin: 15px 3% 15px 0;
+}
+
+.profile:nth-child(4n+1) {
+    clear: both;
+}
+
+.profile__inner {
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile__portrait {
+    background-size: 200px 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.profile__front {
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.profile--liyang__portrait {
+    background-image: url("/static/img/team.jpg")
+}
+
+.profile--liuyang__portrait {
+    background-image: url("/static/img/team.jpg")
+}
+
+.profile--lvpeitao__portrait {
+    background-image: url("/static/img/team.jpg")
+}
+
+.profile--zhangyang__portrait {
+    background-image: url("/static/img/team.jpg")
+}
+
+.profile__name {
+    font-weight: 500;
+}
+
+.profile__experience, .profile__now {
+    opacity: 0;
+    transition: opacity .95s;
+    margin: 1em 0;
+}
+
+.profile__experience {
+    margin-top: .2em;
+}
+
+.profile__experience h4, .profile__now h4 {
+    line-height: 1.5em;
+    color: #fff;
+}
+
+.profile__card h4, .profile__card p {
+    margin: 0;
+    line-height: 1.5em;
+}
+
+@media (max-width: 800px) {
+    .profiles {
+        width: auto;
+        max-width: 600px;
+        float: none;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .profiles:after, .profiles:before {
+        content: '';
+        display: table
+    }
+
+    .profiles:after {
+        clear: both
+    }
+}
+
+@media (max-width: 640px) {
+    .profiles {
+        margin: 15px auto;
+        width: auto;
+        max-width: 250px;
+        float: none;
+        display: block;
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .profiles:after, .profiles:before {
+        content: '';
+        display: table
+    }
+
+    .profiles:after {
+        clear: both
+    }
+}
+
+.profile--investor:after, .profile--investor:before, .profile:after, .profile:before {
+    display: table;
+    content: ''
+}
+
+.profile:after, .profile:nth-child(4n+1) {
+    clear: both
+}
+
+.profile:nth-child(4n) {
+    margin-right: 0;
+    float: right
+}
+
+.profile:last-child {
+    margin-bottom: 0
+}
+
+@media (max-width: 800px) {
+    .profile, .profile:nth-child(4n) {
+        margin-right: 5%;
+        float: left
+    }
+
+    .profile {
+        clear: none;
+        text-align: inherit;
+        width: 47.5%;
+        margin-left: 0
+    }
+
+    .profile:after, .profile:before {
+        content: '';
+        display: table
+    }
+
+    .profile:after {
+        clear: both
+    }
+
+    .profile:nth-child(4n+1) {
+        clear: none
+    }
+
+    .profile:nth-child(2n) {
+        margin-right: 0;
+        float: right
+    }
+
+    .profile:nth-child(2n+1) {
+        clear: both
+    }
+}
+
+@media (max-width: 640px) {
+    .profile, .profile:first-child {
+        margin-left: auto
+    }
+
+    .profile, .profile:last-child {
+        margin-right: auto
+    }
+
+    .profile {
+        display: block;
+        clear: both;
+        width: 100%;
+        float: none
+    }
+}
+
+.profile__card {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    background: rgba(27, 168, 183, .85);
+    color: #fff;
+    padding: 9px 8px 8px;
+    text-align: center;
+    height: 200px;
+    -webkit-transform: translateY(-35px);
+    -ms-transform: translateY(-35px);
+    transform: translateY(-35px);
+    transition: all .45s;
+    transition-timing-function: cubic-bezier(.455, .03, .515, .955);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-weight: 400;
+    line-height: 1.5em
+}
+
+@media (max-width: 640px) {
+    .profile__card {
+        font-size: 13px
+    }
+}
+
+.profile__card h4, .profile__card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5em
+}
+
+@media (max-width: 640px) {
+    .profile__card h4, .profile__card p {
+        font-size: 13px
+    }
+}
+
+.profile__experience {
+    margin-top: .2em
+}
+
+.profile__experience span {
+    white-space: pre
+}
+
+.profile__experience, .profile__now {
+    opacity: 0;
+    transition: opacity .95s;
+    margin: 1em 0
+}
+
+.collaborator, .investor {
+    margin-left: 0;
+    text-align: center
+}
+
+.profile__experience h4, .profile__now h4 {
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #fff
+}
+
+.profile--team:hover .profile__card {
+    -webkit-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    transform: translateY(-200px);
+    padding-top: 25px
+}
+
+.profile--team:hover .profile__experience, .profile--team:hover .profile__now {
+    opacity: 1
+}
+
+/*collaborator*/
+.collaborator__row {
+    margin-bottom: 60px;
+}
+
+.collaborator:after, .collaborator:nth-child(3n+1) {
+    clear: both;
+}
+
+.collaborator {
+    float: left;
+    clear: none;
+    width: 25%;
+    margin-right: 8%;
+}
+
+.collaborator, .investor {
+    margin-left: 0;
+    text-align: center;
+}
+
+.collaborator--majian .collaborator__image {
+    background-image: url("/static/img/team.jpg");
+}
+
+.collaborator--zhuhuaiqiu .collaborator__image {
+    background-image: url("/static/img/team.jpg");
+}
+
+.collaborator__image {
+    height: 220px;
+    width: 100%;
+    margin-bottom: 14px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.collaborator__name {
+    color: #1ba8b7;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin-bottom: 6px;
+}
+
+.collaborator__description {
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-bottom: 6px;
+}
+
+.collaborator__role {
+    font-size: 14px;
+    line-height: 1.5em;
+    font-style: italic;
+}
+
+
+

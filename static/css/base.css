@@ -1,0 +1,79 @@
+/*
+Time: 2017/02/21
+Author: Frank
+Description: for Aegicare home page
+*/
+
+body{
+    background: #f5f5f5;
+}
+
+.navbar {
+    border-bottom: 1px solid #b2b6b6;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .19);
+    background: #fff;
+    padding: 5px 0;
+}
+
+img#logo {
+    height: 70px;
+}
+
+#language a {
+    opacity: 0.2;
+    color: white;
+    text-decoration: none;
+}
+
+#language {
+    text-align: right;
+    float: right;
+}
+
+#language a.active, #language a:hover {
+    opacity: 1;
+}
+
+#language b {
+    font-weight: 300;
+}
+
+.login div {
+    padding: 6px 20px;
+    margin-top: 10px;
+    background-color: #2986E2;
+    border-radius: 5px;
+    color: white;
+}
+
+.login div a {
+    color: white;
+    text-decoration: none;
+}
+
+.login div a:hover {
+    color: #e1e1e1;
+}
+
+#navbar {
+    margin-top: 15px;
+}
+
+.navbar-right{
+    margin-right: 0px;
+}
+
+#mainnav {
+    margin-left: 50px;
+}
+
+#mainnav li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+
+

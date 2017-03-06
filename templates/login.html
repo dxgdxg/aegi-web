@@ -1,0 +1,13 @@
+{% extends 'suzumiya_base.html' %}
+
+{% block title %} Suzumiya LIMS {% endblock %}
+
+
+{% block content %}
+    <p class="text-center">
+        <a href="{% url 'social:begin' 'google-oauth2' %}?next={{ next }}" class="btn-large btn btn-primary"><i
+            class="icon-google-plus"> | Sign in with Google</i></a>
+    </p>
+
+
+{% endblock %}

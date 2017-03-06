@@ -1,0 +1,41 @@
+/*
+Author: Frank
+Time: 2017/02/25
+Function: for css
+*/
+#order{
+    margin-top: 80px;
+}
+
+#order #orderwrapper{
+    background-color: white;
+    min-height: 600px;
+    padding: 40px;
+}
+
+#order .title {
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#order .details{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#order .productInfo{
+    text-align: center;
+    margin: 20px 0;
+}
+
+#order .price{
+    font-size: 200%;
+    color:#1ba8b7;
+    text-align: center;
+}
+
+#order .buy{
+    text-align: center;
+    margin: 20px 0;
+}

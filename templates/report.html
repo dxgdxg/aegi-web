@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {% load i18n %}
+    <title>{% trans "安吉康尔 | 报告解读" %}</title>
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/index.css" %}?time={% now "YmdHi" %}">
+    <div id="report">
+        <div class="container">
+            <div id="reportwrapper">
+                <div class="row">
+                    <div class="col-md-12">
+                            <div class="title">
+                                报告解读
+                            </div>
+                            <div class="content">
+                                报告解读系统正在建设中，敬请关注。
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

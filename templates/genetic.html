@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {% load i18n %}
+    <title>{% trans "安吉康尔 | 遗传病筛查" %}</title>
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/index.css" %}?time={% now "YmdHi" %}">
+    <div id="genetic">
+        <div class="container">
+            <div id="geneticwrapper">
+                <div class="title">
+                    遗传病全谱基因检测
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+                            <p>遗传病是由基因组改变而引起的疾病，利用全基因组测序技术，安吉康尔可为患者精准检测目前已知的4000多种遗传病及罕见病；遗传病的数据解读和临床管理非常具有挑战性，
+                                安吉康尔结合基因组大数据和深度学习开发了临床决策人工智能辅助系统，让患者真正了解并从自己的遗传数据中受益。</p>
+                            <p>
+                                遗传病的诊断长期以来依靠医生的经验，圈定少量可能致病的基因进行针对性的测序，经常导致误诊或漏诊。随着第二代基因测序技
+                                术的不断成熟完善，全谱的外显子组测序在遗传病诊断领域逐渐成为主流。通过一次检测覆盖人类所有180000个外显子，22000多
+                                个基因和6000万多个位点的全外显子组测序在临床应用中具有简便、经济、高效的特点，同时由于其对目标区域的覆盖度更高，有
+                                利于基因变异的检出，提高遗传疾病的诊断率。同时安吉康尔开发了高精度全自动的遗传病全外显子组测序数据分析系统和智能解读
+                                系统，为患者带来最精准，最快速，最经济，最权威的检测服务。
+                            </p>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="subtitle">
+                                检测内容
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            正常体细胞全外显子组测序
+                        </div>
+                        <div class="col-md-2">
+                            <div class="subtitle">
+                                适用人群
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            疑似遗传病患者，具有相关疾病家族遗传史的健康人, 复杂遗传病患者的父母(trio测试)。
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="subtitle">
+                               样品要求
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            2ml唾液
+                        </div>
+                        <div class="col-md-2">
+                            <div class="subtitle">
+                                测序结果分析内容
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            序列比对+变异识别+临床注释+循证治疗方案+智能检测报告
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="subtitle">
+                                产品优势
+                            </div>
+
+                        </div>
+                        <div class="col-md-10">
+                            <p>安全无创——以唾液为检测样本 </p>
+                            <p>全谱覆盖——全面检测目前已知的近万种遗传病和罕见病，极大减少误诊漏诊 </p>
+                            <p>先进技术——不仅检测单点位突变，还检测基因拷贝数变化和染色体结构性变化 </p>
+                            <p>快速报告—— 取样后大约3周产生纸板和电子版报告 </p>
+                            <p>临床咨询——Aegicare数据库紧跟临床研究前沿结果，持续为患者更新最合适的治疗方案和用药指导 </p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}

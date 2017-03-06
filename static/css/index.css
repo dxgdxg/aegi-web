@@ -1,0 +1,459 @@
+/*
+Time: 2017/02/21
+Author: Frank
+Description: for Aegicare home page
+*/
+
+#mainnav {
+    margin-left: 50px;
+}
+
+#mainnav li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#home {
+    padding-top: 80px;
+    background-color: #f5f5f5;
+    /*background: url(/static/img/bg_dots.png);*/
+}
+
+#home .light, #home .dark {
+    min-height: 300px;
+    padding-top: 20px;
+}
+
+#home .dark {
+    /*background-color: #dddddd;*/
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#home .light {
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#home #news {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#home #news img {
+    max-height: 40px;
+}
+
+#home #news .title {
+    color: #1BA8B7;
+    font-size: 120%;
+    font-weight: bold;
+
+}
+
+#home #news .time {
+    color: #666666;
+    margin: 5px 0;
+}
+
+#home #news .more {
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+#home #news .more a {
+    background-color: #1BA8B7;
+    border: 1px #1BA8B7;
+    color: white;
+}
+
+.section-title {
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#genetic, #cancer {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#genetic .service-title, #cancer .service-title {
+    font-size: 200%;
+    color: #1BA8B7;
+}
+
+#genetic .service-content {
+
+}
+
+#cooperation {
+    height: 380px;
+}
+
+#cooperation img {
+    height: 50px;
+}
+
+#cooperation .rowitem {
+    margin-top: 40px;
+}
+
+#cooperation {
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+/*about page*/
+
+#about #topimg {
+    height: 340px;
+    background: url(/static/img/about-bg.jpg) no-repeat center center;
+}
+
+#about .aboutitem {
+    background-color: white;
+    padding: 40px 50px;
+    margin-bottom: 20px;
+    line-height: 180%;
+}
+
+#about .aboutitem > .title {
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about .aboutitem .newscontent {
+    font-size: 14px;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+#about .aboutitem .newscontent .title {
+    color: #2986e2;
+}
+
+#about .aboutitem .newscontent .newsTime {
+    text-align: right;
+}
+
+#about .team .row {
+    margin: 20px 0;
+}
+
+#about .team .name {
+    font-size: 120%;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/*service page*/
+
+#service {
+    margin-top: 80px;
+}
+
+#service #servicewrapper {
+    /*background-color: #eaeaea;*/
+    background-color: white;
+    padding: 30px;
+    min-height: 600px;
+}
+
+#service .title {
+    font-size: 160%;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#service .content{
+    line-height: 1.6;
+    padding: 40px;
+
+}
+
+/*mission page*/
+#mission {
+    margin-top: 80px;
+}
+
+#mission #missionwrapper > img {
+    width: 100%;
+}
+
+#mission #missionwrapper {
+    /*background-color: #eaeaea;*/
+    background-color: white;
+    min-height: 500px;
+}
+
+#mission .title {
+    font-size: 160%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+#mission .content {
+    padding: 40px;
+    line-height: 2;
+}
+
+#mission .content #missionBottom {
+    margin-top: 40px;
+    padding: 0 10%;
+}
+
+#missionBottom .row {
+    margin-bottom: 40px;
+}
+
+#missionBottom #mission1 {
+    height: 120px;
+    background: url("/static/img/mission1.png") center no-repeat;
+}
+
+#missionBottom #mission2 {
+    height: 120px;
+    background: url("/static/img/mission2.png") center no-repeat;
+}
+
+#missionBottom #mission3 {
+    height: 120px;
+    background: url("/static/img/mission3.png") center no-repeat;
+}
+
+#missionBottom #mission4 {
+    height: 120px;
+    background: url("/static/img/mission4.png") center no-repeat;
+}
+
+#missionBottom #mission5 {
+    height: 120px;
+    background: url("/static/img/mission5.png") center no-repeat;
+}
+
+#missionBottom #mission6 {
+    height: 120px;
+    background: url("/static/img/mission6.png") center no-repeat;
+}
+
+#missionBottom .missionTitle {
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#missionBottom .missionDes {
+    text-align: center;
+}
+
+/*terms page*/
+#terms {
+    margin-top: 80px;
+}
+
+#terms #termswrapper {
+    background-color: white;
+    padding: 40px;
+}
+
+#terms .title {
+    font-size: 160%;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#terms .content #image {
+    text-align: center;
+}
+
+#terms .content img{
+    width: 60%;
+}
+
+#terms .details{
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+/*report page*/
+#report {
+    margin-top: 80px;
+}
+
+#report #reportwrapper {
+    background-color: white;
+    min-height: 600px;
+    padding: 40px;
+}
+
+#report .title {
+    font-size: 160%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#report .content {
+    padding: 40px;
+}
+
+
+/*privacy page*/
+#privacy {
+    margin-top: 80px;
+}
+
+#privacy #privacywrapper {
+    background-color: white;
+    min-height: 600px;
+    padding: 40px;
+}
+
+#privacy #privacywrapper > .title {
+    font-size: 160%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#privacy .content{
+    padding: 40px;
+    line-height: 1.8;
+}
+
+#privacy .privacyitems{
+    padding: 40px;
+    padding-top: 0px;
+}
+
+#privacy .privacyitem{
+    line-height: 1.8;
+}
+
+#privacy .privacyitem > .title{
+    font-size: 120%;
+    color: #1ba8b7;
+}
+
+#privacy .indication{
+    margin-top: 30px;
+}
+
+#privacy .modifyDate{
+    text-align: right;
+    margin-top: 40px;
+}
+
+#privacy .privacyitem li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*workflow*/
+#workflow {
+    margin-top: 80px;
+}
+
+#workflow #workflowwrapper {
+    background-color: white;
+    min-height: 600px;
+    padding: 40px;
+}
+
+#workflow #workflowwrapper > .title {
+    font-size: 160%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#workflow .content {
+    padding: 40px;
+}
+
+#workflow .step{
+    border: grey 1px solid;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#workflow .steps .row{
+    margin-bottom: 20px;
+}
+
+#workflow .step .title{
+    font-size: 120%;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/*cdss*/
+#cdss {
+    margin-top: 80px;
+}
+
+#cdss #cdsswrapper {
+    background-color: white;
+    min-height: 600px;
+    padding: 40px;
+}
+
+#cdss .title {
+    font-size: 160%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#cdss .content {
+    padding: 40px;
+    line-height: 1.6;
+}
+
+#cdss .cdssImage img {
+    width: 100%;
+}
+
+
+/*genetic page*/
+#genetic {
+    margin-top: 80px;
+}
+
+#genetic #geneticwrapper {
+    background-color: white;
+    padding: 40px 60px;
+    min-height: 600px;
+}
+
+#genetic .title {
+    font-size: 160%;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+#genetic .content{
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+#genetic .content .row{
+    margin-bottom: 30px;
+}
+
+#genetic .subtitle{
+    padding: 5px 10px;
+    background-color: lightsalmon;
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+    {% load i18n %}
+    <title>{% trans "安吉康尔 | 团队介绍" %}</title>
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/team.css" %}?time={% now "YmdHi" %}">
+    <div id="team">
+        <div class="container">
+
+            <div class="teamwrapper">
+                <div class="teamTitle">
+                    公司核心成员
+                </div>
+                <div id="teammember">
+                    安吉康尔公司核心团队来自于北京大学生物医学工程系、清华大学计算机系、军事医学科学院、美国伊利诺伊大学香槟分校生物医学工程系、美国卡内基梅隆大学计算机系等国内外顶级院校及美国硅谷的明星创业公司，下面是代表性工作人员。
+                </div>
+                <div class="card ng-scope">
+                    <div class="card__inner">
+                        <div class="card__content">
+                            <div class="profiles">
+                                <div class="profile profile--team profile--liyang">
+                                    <div class="profile__inner">
+                                        <div class="profile__front">
+                                            <div class="profile__portrait profile--liyang__portrait"></div>
+                                        </div>
+                                        <div class="profile__card">
+                                            <div class="profile__name">李&nbsp;&nbsp;阳
+
+                                            </div>
+                                            <div class="profile__experience">
+                                                <h4>工作经历</h4>
+                                                <p>INVITAE</p>
+                                                <p>UIUC</p>
+                                            </div>
+                                            <div class="profile__now">
+                                                <h4>关注</h4>
+                                                <p>生物信息学算法</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile profile--team profile--liuyang">
+                                    <div class="profile__inner">
+                                        <div class="profile__front">
+                                            <div class="profile__portrait profile--liuyang__portrait"></div>
+                                        </div>
+                                        <div class="profile__card">
+                                            <div class="profile__name">刘&nbsp;&nbsp;阳
+
+                                            </div>
+                                            <div class="profile__experience">
+                                                <h4>工作经历</h4>
+                                                <p>302医院</p>
+                                                <p>军事医学科学院</p>
+                                            </div>
+                                            <div class="profile__now">
+                                                <h4>关注</h4>
+                                                <p>大数据挖掘</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile profile--team profile--lvpeitao">
+                                    <div class="profile__inner">
+                                        <div class="profile__front">
+                                            <div class="profile__portrait profile--lvpeitao__portrait"></div>
+                                        </div>
+                                        <div class="profile__card">
+                                            <div class="profile__name">吕佩涛
+
+                                            </div>
+                                            <div class="profile__experience">
+                                                <h4>工作经历</h4>
+                                                <p>碧桂园</p>
+                                                <p>北京大学工学院</p>
+                                            </div>
+                                            <div class="profile__now">
+                                                <h4>关注</h4>
+                                                <p>商业运营</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile profile--team profile--zhangyang">
+                                    <div class="profile__inner">
+                                        <div class="profile__front">
+                                            <div class="profile__portrait profile--zhangyang__portrait"></div>
+                                        </div>
+                                        <div class="profile__card">
+                                            <div class="profile__name">张&nbsp;&nbsp;洋
+
+                                            </div>
+                                            <div class="profile__experience">
+                                                <h4>工作经历</h4>
+                                                <p>UIUC</p>
+                                            </div>
+                                            <div class="profile__now">
+                                                <h4>关注</h4>
+                                                <p>遗传学</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="address">
+                <a href="{% url "career" %}">加入我们</a>
+            </div>
+
+            <div class="teamwrapper">
+                <div id="advisor" class="teamTitle">我们的导师团队</div>
+
+                <div class="card ng-scope">
+                    <div class="card__inner">
+                        <div class="card__content">
+                            <div class="row">
+                                <div class="collaborator collaborator--majian col-md-4">
+                                    <div class="collaborator__image"></div>
+                                    <div class="collaborator__name">马&nbsp;&nbsp;坚, Ph.D.</div>
+                                    <div class="collaborator__description">UIUC.
+                                    </div>
+                                    <div class="collaborator__role">Advisor, Scientific Collaborator</div>
+                                </div>
+                                <div class="collaborator collaborator--zhuhuaiqiu col-md-4">
+                                    <div class="collaborator__image"></div>
+                                    <div class="collaborator__name">朱怀球, Ph.D.</div>
+                                    <div class="collaborator__description">北京大学生物医学工程系.
+                                    </div>
+                                    <div class="collaborator__role">Advisor, Scientific Collaborator</div>
+                                </div>
+                                <div class="collaborator collaborator--zhuhuaiqiu col-md-4">
+                                    <div class="collaborator__image"></div>
+                                    <div class="collaborator__name">朱怀球</div>
+                                    <div class="collaborator__description">北京大学生物医学工程系.
+                                    </div>
+                                    <div class="collaborator__role">Advisor</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

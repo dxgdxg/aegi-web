@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-22 07:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: aegicare_web/settings.py:114
+msgid "Chinese"
+msgstr ""
+
+#: aegicare_web/settings.py:115
+msgid "English"
+msgstr ""
+
+#: templates/home/home.html:13
+msgid "安吉康尔(深圳)科技有限公司"
+msgstr "Aegicare(Shenzhen) Technology Co., Ltd"
+
+#: templates/home/home.html:63
+msgid "关于我们"
+msgstr "ABOUT"
+
+#: templates/home/home.html:64
+msgid "产品介绍"
+msgstr "PRODUCTS&SERVICE"
+
+#: templates/home/home.html:65
+msgid "服务流程"
+msgstr "PROCEDURE"
+
+#: templates/home/home.html:66
+msgid "购买"
+msgstr "ORDER"
+
+#: templates/home/home.html:72
+msgid "登录"
+msgstr "LOGIN"
+
+#: templates/home/home.html:73
+msgid "注册"
+msgstr "REGISTER"

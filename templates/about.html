@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+    {% load i18n %}
+    <title>{% trans "安吉康尔 | 关于我们" %}</title>
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/index.css" %}?time={% now "YmdHi" %}">
+    <div id="about">
+        <div id="topimg">
+        </div>
+        <div class="content">
+            <div class="container">
+                <div id="aboutus">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <div class="aboutitem">
+                                <div class="title">
+                                    公司简介
+                                </div>
+                                <div class="content" style="line-height: 2">
+                                    安吉康尔AEGICARE（深圳）科技有限公司总部位于深圳市南山区科技园，是一家致力于建立基于基因大数据的精准医疗人工智能平台，
+                                    和推动包括肿瘤在内的人类基因组疾病研究的创业公司。<br>创始团队来自于北京大学生物医学工程系，清华大学计算机系，中科大生物系，
+                                    军事医学科学院医疗信息系，美国伊利诺伊大学香槟分校生物医学工程系，美国卡内基梅隆大学计算机系等国内外顶级院校，有十余年的生物信息学，
+                                    高通量测序，临床遗传学及人工智能学术和业界经验。<br>
+                                    安吉康尔的使命是将基因组大数据和人工智能引入到主流医疗实践中，提高亿万人的医疗健康水平。我们致力于打造以基因组数据为基础、结合患者其他临床医疗数据的人工智能医疗平台，为患者和医生提供临床精准决策支持。
+                                </div>
+                            </div>
+
+                            <div class="aboutitem">
+                                <div class="title">
+                                    媒体新闻
+                                </div>
+                                <div class="newscontent">
+                                    {% for newsItem in news %}
+                                        <div class="newItem" id="{{ forloop.counter }}">
+                                            <div class="row">
+                                                <div class="col-md-5 col-md-offset-2 newsTitle">
+                                                    <a href="{% url 'news:detail' id=newsItem.newsId %}"><span
+                                                            class="title">{{ newsItem.title }}</span></a>
+                                                </div>
+                                                <div class="col-md-2 newsTime">
+                                                    <span class="time">{{ newsItem.time|date:"d F, Y" }} </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                            <div class="aboutitem">
+                                <div class="title">
+                                    团队介绍
+                                </div>
+                                <div class="content">
+                                    <div class="team">
+                                        <div class="row teamitem">
+                                            <div class="col-md-2">
+                                                <img src="{% static "img/ly.png" %}" width="100px">
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="name">
+                                                    李阳 CEO
+                                                </div>
+                                                <div class="description">
+                                                    资深生物信息科学家，曾就职于美国INVITEA公司、ACCURAGEN公司。
+                                                    博士毕业于美国伊利诺伊大学香槟分校，本科毕业于北京大学。
+                                                    发明了FusionHunter、TrueSight、Weaver等基因组大数据核心算法，在国际权威期刊上发表文章十余篇，被引用三百余次。
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row teamitem">
+                                            <div class="col-md-2">
+                                                <img src="{% static "img/ly.png" %}" width="100px">
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="name">
+                                                    刘阳 CTO
+                                                </div>
+                                                <div class="description">
+                                                    资深生物信息科学家，曾就职于三〇二医院临床研究管理中心。博士毕业于军事医学科学院，本科毕业于清华大学计算机科学与技术系。
+                                                    精通组学大数据分析与临床数据解读。
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row teamitem">
+                                            <div class="col-md-2">
+                                                <img src="{% static "img/ly.png" %}" width="100px">
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="name">
+                                                    吕佩涛 COO
+
+                                                </div>
+                                                <div class="description">
+                                                    曾任职深圳市翔丰华科技股份有限公司董事长秘书，总经理助理，负责并购重组和上市业务以及碧桂园集团马来西亚区域项目经理。
+                                                    本科、硕士毕业于北京大学生物医学工程系。
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row teamitem">
+                                            <div class="col-md-2">
+                                                <img src="{% static "img/ly.png" %}" width="100px">
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="name">
+                                                    张洋 生物信息总监
+                                                </div>
+                                                <div class="description">
+                                                    美国卡内基梅隆大学计算机系科学家。博士毕业于美国伊利诺伊大学香槟分校，本科毕业于中国科学技术大学生物系。
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="aboutitem">
+                                <div class="title">
+                                    加入我们
+                                </div>
+                                <div class="content">
+                                    <h4>安吉康尔(深圳)科技有限公司</h4><br><br>
+
+                                    公司电话：0755-33201903(深圳)<br>
+                                    人员招聘：<a href="mailto:hr@aegicare.com">hr@aegicare.com</a><br>
+                                    科研合作：<a href="mailto:research@aegicare.com">research@aegicare.com</a><br>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+{% endblock %}

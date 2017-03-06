@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+    {% load i18n %}
+    <title>{% trans "安吉康尔 | 癌症诊断" %}</title>
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/index.css" %}?time={% now "YmdHi" %}">
+    <div id="genetic">
+        <div class="container">
+            <div id="geneticwrapper">
+                <div class="title">
+                    实体肿瘤病理组织全基因组测序
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            肿瘤的本质是多基因共同作用的遗传疾病，随着肿瘤的发展，癌细胞在不断地进行分裂增殖积累突变，有高度的异质性，且其基因组具有不稳定性。超过90%的肿瘤患者存在着不同程度的基因突变（SNVs）、插入移码（Insertion）、缺失（Deletion）、拷贝数变化（CNV）以及基因重排、融合等外显子和内含子变异现象。以基因为线索，找出肿瘤发生发展的驱动基因，进行转化研究，才能使患者在正确的时间获得正确的治疗，从而达到最佳的治疗效果，最小的毒副作用，最高的生活质量。安吉康尔美国团队研发了Weaver算法（2016年发表在Cell子刊，已申请专利和软件著作权），可以高效准确的分析肿瘤高通量全基因组测序数据，精准检测拷贝数变异（CNV）和基因组结构变异（SV），同时可以追溯个体肿瘤基因组演化历史，找到早期肿瘤的驱动变异（Driver
+                            Mutation），推动肿瘤基因组大数据精准分析。
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="subtitle">
+                                检测内容
+                            </div>
+
+                        </div>
+                        <div class="col-md-10">
+                            肿瘤组织全基因组测序，测序深度100X
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="subtitle">
+                                适用人群
+                            </div>
+
+                        </div>
+                        <div class="col-md-10">
+                            全部实体瘤患者
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="subtitle">
+                                样品要求
+                            </div>
+
+                        </div>
+                        <div class="col-md-10">
+                            <p>肿瘤样本： 新鲜组织（手术/穿刺）；冰冻组织（手术/穿刺）；石蜡切片（手术/穿刺）</p>
+                            <p>对照样本： 3-5ml外周血液</p>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="subtitle">
+                                测序结果分析内容
+                            </div>
+
+                        </div>
+                        <div class="col-md-10">
+                            序列比对+变异识别+拷贝数变化+染色体结构变化+肿瘤含量估测+信号通路注释
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="subtitle">
+                                产品优势
+                            </div>
+
+                        </div>
+                        <div class="col-md-10">
+                            最全面基因组信息——覆盖肿瘤细胞以及正常细胞的全基因组测序，最为全面的基因检测方案，最大限度地探索致病机理、最大程度地帮助发现治疗机会
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}

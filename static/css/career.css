@@ -1,0 +1,67 @@
+/*
+Author: Frank
+Time: 20170225
+Description: for career page
+*/
+
+#career {
+    margin-top: 80px;
+}
+
+#career #topimg {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+#career .careerwrapper {
+    background-color: white;
+    padding: 40px 60px;
+}
+
+#career .careerwrapper .title {
+    font-size: 200%;
+    font-weight: bold;
+    color: #aaaaaa;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+#career .careerwrapper .job-title .name{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 140%;
+    font-weight: bold;
+    color: #4fb1f7;
+}
+
+#career .careerwrapper .job-title .des{
+    font-size: 100%;
+    color: #888888;
+
+}
+
+#career .careerwrapper #slogan {
+    font-size: 150%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#career .careerwrapper #aim {
+    line-height: 180%;
+}
+
+#career .careerwrapper .job-description{
+    margin-bottom: 40px;
+}
+
+#career .address, #career .address a{
+    background-color: #1BA8B7;
+    color: white;
+    font-size: 120%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+

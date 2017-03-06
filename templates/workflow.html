@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {% load i18n %}
+    <title>{% trans "安吉康尔 | 服务流程" %}</title>
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static "css/index.css" %}?time={% now "YmdHi" %}">
+    <link rel="stylesheet" href="{% static "css/icon.css" %}?time={% now "YmdHi" %}">
+    <div id="workflow">
+        <div class="container">
+            <div id="workflowwrapper">
+                <div class="title">
+                    遗传病全谱基因检测服务流程
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content">
+                            <div class="steps">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <div class="row step">
+                                            <div class="col-md-9">
+                                                <div class="title">
+                                                    购买套件
+                                                </div>
+                                                <div class="description">
+                                                    在安吉康尔官网或者微信公众号(aegicare)购买检测服务。唾液采集盒通过顺丰快递寄送到您手中。
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <div class="image">
+                                                    <i class="icon icon-shop pull-right hidden-xs"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <div class="row step">
+                                            <div class="col-md-9">
+                                                <div class="title">
+                                                    绑定套件
+                                                </div>
+                                                <div class="description">
+                                                    收到采样盒后,在安吉康尔官网注册账户并将采集器上的套件码与账号进行绑定。
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <div class="image">
+                                                    <i class="icon icon-shop pull-right hidden-xs"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <div class="row step">
+                                            <div class="col-md-9">
+                                                <div class="title">
+                                                    采集样本
+                                                </div>
+                                                <div class="description">
+                                                    根据《用户使用说明》，进行唾液样本的采集。
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <div class="image">
+                                                    <i class="icon icon-shop pull-right hidden-xs"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <div class="row step">
+                                            <div class="col-md-9">
+                                                <div class="title">
+                                                    寄回样本
+                                                </div>
+                                                <div class="description">
+                                                    将采集完成的样本，邮寄到指定地址，选择到付。
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <div class="image">
+                                                    <i class="icon icon-shop pull-right hidden-xs"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <div class="row step">
+                                            <div class="col-md-9">
+                                                <div class="title">
+                                                    查看报告
+                                                </div>
+                                                <div class="description">
+                                                    检测报告将在收到样本的4周内生成。您可以登录官网或者微信公众号（aegicare）查看。
+                                                    在此之前，您可以登录账号查看检测进度。目前安吉康尔提供网页版和pdf版本报告 。
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <div class="image">
+                                                    <i class="icon icon-shop pull-right hidden-xs"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

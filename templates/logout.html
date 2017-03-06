@@ -1,0 +1,10 @@
+{% extends 'suzumiya_base.html' %}
+
+{% block title %} Suzumiya LIMS {% endblock %}
+
+
+{% block content %}
+  <h1>You're out.</h1>
+  <p class="lead"><a href="{% url 'home:login' %}">Login again?</a></p>
+{% endblock %}
+

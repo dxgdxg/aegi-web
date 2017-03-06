@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {% load i18n %}
+    <title>{% trans "安吉康尔 | 服务购买" %}</title>
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static "order/order.css" %}?time={% now "YmdHi" %}">
+    <div id="order">
+        <div class="container">
+            <div id="orderwrapper">
+                <div class="title">
+                    Aegicare遗传病检测套件
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content">
+                            <div class="productInfo">
+                                遗传病全外显子测序，针对中国群体提供检测报告，提供遗传相关疾病的风险基因检测结果。
+                            </div>
+                            <div class="price">
+                                ￥2000.00
+                            </div>
+{#                            <div class="buy"><a class="btn btn-primary">立即购买</a></div>#}
+                            <div class="buy">目前网站尚未开通支付功能，请联系我们客服进行服务购买，电话0755-33201903(深圳)，邮箱 <a href="mailto:support@aegicare.com">support@aegicare.com</a>。</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+{% endblock %}
