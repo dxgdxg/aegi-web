@@ -94,19 +94,19 @@ Description: for team page
 }
 
 .profile--liyang__portrait {
-    background-image: url("/static/img/team.jpg")
+    background-image: url("/static/img/figure.png")
 }
 
 .profile--liuyang__portrait {
-    background-image: url("/static/img/team.jpg")
+    background-image: url("/static/img/figure.png")
 }
 
 .profile--lvpeitao__portrait {
-    background-image: url("/static/img/team.jpg")
+    background-image: url("/static/img/figure.png")
 }
 
 .profile--zhangyang__portrait {
-    background-image: url("/static/img/team.jpg")
+    background-image: url("/static/img/figure.png")
 }
 
 .profile__name {
@@ -344,11 +344,11 @@ Description: for team page
 }
 
 .collaborator--majian .collaborator__image {
-    background-image: url("/static/img/team.jpg");
+    background-image: url("/static/img/majian.jpg");
 }
 
 .collaborator--zhuhuaiqiu .collaborator__image {
-    background-image: url("/static/img/team.jpg");
+    background-image: url("/static/img/zhuhuaiqiu.jpg");
 }
 
 .collaborator__image {

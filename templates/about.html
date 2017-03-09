@@ -10,41 +10,43 @@
     {% load static %}
     <link rel="stylesheet" href="{% static "css/index.css" %}?time={% now "YmdHi" %}">
     <div id="about">
-        <div id="topimg">
-        </div>
         <div class="content">
             <div class="container">
                 <div id="aboutus">
+                    <div id="topimg">
+                    </div>
                     <div class="row">
                         <div class="col-md-12">
 
                             <div class="aboutitem">
                                 <div class="title">
-                                    公司简介
+                                    <a href="{% url "mission" %}">公司简介</a>
                                 </div>
                                 <div class="content" style="line-height: 2">
-                                    安吉康尔AEGICARE（深圳）科技有限公司总部位于深圳市南山区科技园，是一家致力于建立基于基因大数据的精准医疗人工智能平台，
-                                    和推动包括肿瘤在内的人类基因组疾病研究的创业公司。<br>创始团队来自于北京大学生物医学工程系，清华大学计算机系，中科大生物系，
-                                    军事医学科学院医疗信息系，美国伊利诺伊大学香槟分校生物医学工程系，美国卡内基梅隆大学计算机系等国内外顶级院校，有十余年的生物信息学，
-                                    高通量测序，临床遗传学及人工智能学术和业界经验。<br>
-                                    安吉康尔的使命是将基因组大数据和人工智能引入到主流医疗实践中，提高亿万人的医疗健康水平。我们致力于打造以基因组数据为基础、结合患者其他临床医疗数据的人工智能医疗平台，为患者和医生提供临床精准决策支持。
+                                    <p><b>安吉康尔</b>（深圳）科技有限公司总部位于深圳市南山区科技园，在美国硅谷和匹兹堡设有研发中心。将基因组大数据和人工智能引入到主流医疗实践，提高亿万人的医疗健康水平是安吉康尔的使命。我们致力于打造以基因组数据为基础，并结合多种临床医疗数据的人工智能医疗平台，为患者和医生提供临床精准决策辅助。公司英文名称AEGICARE，AEGI源自希腊语，为希腊神话中众神之王宙斯所持神盾，CARE意为关怀和治疗。AEGICARE安吉康尔从创立的那天起就希望成为遗传病和癌症等基因组疾病患者的守护神。
+                                    </p>
+                                    <p>公司创始团队来自于北京大学生物医学工程系，清华大学计算机系，中科大生物系，
+                                        军事医学科学院医疗信息系，美国伊利诺伊大学香槟分校生物医学工程系，美国卡内基梅隆大学计算机系等国内外顶级院校，有十余年的生物信息学，
+                                        高通量测序，临床遗传学及人工智能学术和业界经验。</p>
+                                    <p>21世纪初人类基因组计划完成时提出了个性化治疗(Personalized
+                                        Medicine)的理念，旨在用测序得到的遗传标记来判断病人药物反应，根据每个患者的个体特征“量身定制”治疗方法。然而，现实中的基因疾病往往是由多个基因共同作用导致的，给个性化治疗带来极大障碍。近年来，大规模基因组数据库兴起建立，人工智能和生物医学大数据的应用日趋成熟；加之基因组学的高速发展和各种检测手段的精进，“精准医疗”从美国开始，在全世界得到推崇。2016年，中国全面启动精准医疗计划，预计在2030年前将投入600亿资金用于该项目，建立常见疾病和高流行率罕见病的队列；建立生物医学大数据共享平台；并以临床应用为导向，建立重大疾病的风险评估、预测预警、早期筛查、分型分类、个体化治疗等精准防治方案和临床决策系统。在这个精准医疗前所未有的机遇时期，安吉康尔应运而生！</p>
                                 </div>
                             </div>
 
                             <div class="aboutitem">
                                 <div class="title">
-                                    媒体新闻
+                                    <a href="{% url "news:index" %}">媒体新闻</a>
                                 </div>
                                 <div class="newscontent">
                                     {% for newsItem in news %}
                                         <div class="newItem" id="{{ forloop.counter }}">
                                             <div class="row">
-                                                <div class="col-md-5 col-md-offset-2 newsTitle">
+                                                <div class="col-md-6 col-md-offset-1 newsTitle">
                                                     <a href="{% url 'news:detail' id=newsItem.newsId %}"><span
                                                             class="title">{{ newsItem.title }}</span></a>
                                                 </div>
                                                 <div class="col-md-2 newsTime">
-                                                    <span class="time">{{ newsItem.time|date:"d F, Y" }} </span>
+                                                    <span class="time">{{ newsItem.time|date:"Y-m-d" }} </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -54,13 +56,13 @@
 
                             <div class="aboutitem">
                                 <div class="title">
-                                    团队介绍
+                                    <a href="{% url "team" %}">团队介绍</a>
                                 </div>
                                 <div class="content">
                                     <div class="team">
                                         <div class="row teamitem">
                                             <div class="col-md-2">
-                                                <img src="{% static "img/ly.png" %}" width="100px">
+                                                <img src="{% static "img/figure.png" %}" width="100px">
                                             </div>
                                             <div class="col-md-9">
                                                 <div class="name">
@@ -76,7 +78,7 @@
 
                                         <div class="row teamitem">
                                             <div class="col-md-2">
-                                                <img src="{% static "img/ly.png" %}" width="100px">
+                                                <img src="{% static "img/figure.png" %}" width="100px">
                                             </div>
                                             <div class="col-md-9">
                                                 <div class="name">
@@ -92,7 +94,7 @@
 
                                         <div class="row teamitem">
                                             <div class="col-md-2">
-                                                <img src="{% static "img/ly.png" %}" width="100px">
+                                                <img src="{% static "img/figure.png" %}" width="100px">
                                             </div>
                                             <div class="col-md-9">
                                                 <div class="name">
@@ -108,7 +110,7 @@
 
                                         <div class="row teamitem">
                                             <div class="col-md-2">
-                                                <img src="{% static "img/ly.png" %}" width="100px">
+                                                <img src="{% static "img/figure.png" %}" width="100px">
                                             </div>
                                             <div class="col-md-9">
                                                 <div class="name">
@@ -126,7 +128,7 @@
 
                             <div class="aboutitem">
                                 <div class="title">
-                                    加入我们
+                                    <a href="{% url "career" %}">加入我们</a>
                                 </div>
                                 <div class="content">
                                     <h4>安吉康尔(深圳)科技有限公司</h4><br><br>

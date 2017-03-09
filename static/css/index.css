@@ -77,18 +77,28 @@ Description: for Aegicare home page
     margin-bottom: 30px;
 }
 
-#genetic, #cancer {
+#genetic-home, #cancer-home {
     padding-left: 40px;
     padding-right: 40px;
 }
 
-#genetic .service-title, #cancer .service-title {
+#genetic-home .service-title, #cancer-home .service-title {
     font-size: 200%;
     color: #1BA8B7;
 }
 
-#genetic .service-content {
+#genetic-home .service-content, #cancer-home .service-content {
+    margin-top: 10px;
+    line-height: 1.8;
+}
 
+#genetic-home .service-content .intro, #cancer-home .service-content .intro {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+#genetic-home img ,#cancer-home img{
+    width: 200px;
 }
 
 #cooperation {
@@ -112,8 +122,8 @@ Description: for Aegicare home page
 /*about page*/
 
 #about #topimg {
-    height: 340px;
-    background: url(/static/img/about-bg.jpg) no-repeat center center;
+    height: 296px;
+    background: url(/static/img/about-us.jpg) no-repeat center center;
 }
 
 #about .aboutitem {
@@ -128,6 +138,16 @@ Description: for Aegicare home page
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
+
+}
+
+#about .aboutitem > .title a {
+    color: black;
+}
+
+#about .aboutitem > .title a:hover {
+    text-decoration: none;
+    color: #337ab7;
 }
 
 #about .aboutitem .newscontent {
@@ -138,6 +158,7 @@ Description: for Aegicare home page
 
 #about .aboutitem .newscontent .title {
     color: #2986e2;
+    color: #1BA8B7;
 }
 
 #about .aboutitem .newscontent .newsTime {
@@ -174,7 +195,7 @@ Description: for Aegicare home page
 
 }
 
-#service .content{
+#service .content {
     line-height: 1.6;
     padding: 40px;
 
@@ -278,11 +299,11 @@ Description: for Aegicare home page
     text-align: center;
 }
 
-#terms .content img{
+#terms .content img {
     width: 60%;
 }
 
-#terms .details{
+#terms .details {
     margin-top: 50px;
     text-align: center;
 
@@ -309,7 +330,6 @@ Description: for Aegicare home page
     padding: 40px;
 }
 
-
 /*privacy page*/
 #privacy {
     margin-top: 80px;
@@ -327,35 +347,35 @@ Description: for Aegicare home page
     text-align: center;
 }
 
-#privacy .content{
+#privacy .content {
     padding: 40px;
     line-height: 1.8;
 }
 
-#privacy .privacyitems{
+#privacy .privacyitems {
     padding: 40px;
     padding-top: 0px;
 }
 
-#privacy .privacyitem{
+#privacy .privacyitem {
     line-height: 1.8;
 }
 
-#privacy .privacyitem > .title{
+#privacy .privacyitem > .title {
     font-size: 120%;
     color: #1ba8b7;
 }
 
-#privacy .indication{
+#privacy .indication {
     margin-top: 30px;
 }
 
-#privacy .modifyDate{
+#privacy .modifyDate {
     text-align: right;
     margin-top: 40px;
 }
 
-#privacy .privacyitem li{
+#privacy .privacyitem li {
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -381,20 +401,25 @@ Description: for Aegicare home page
     padding: 40px;
 }
 
-#workflow .step{
+#workflow .step {
     border: grey 1px solid;
     border-radius: 5px;
     padding: 20px;
 }
 
-#workflow .steps .row{
+#workflow .steps .row {
     margin-bottom: 20px;
 }
 
-#workflow .step .title{
+#workflow .step .title {
     font-size: 120%;
     font-weight: bold;
     margin-bottom: 15px;
+    color: #1BA8B7;
+}
+
+#workflow .image img {
+    width: 100px;
 }
 
 /*cdss*/
@@ -415,7 +440,7 @@ Description: for Aegicare home page
 }
 
 #cdss .content {
-    padding: 40px;
+    padding: 20px 30px;
     line-height: 1.6;
 }
 
@@ -423,6 +448,9 @@ Description: for Aegicare home page
     width: 100%;
 }
 
+#cdss .first {
+    padding: 40px 40px 0 40px;
+}
 
 /*genetic page*/
 #genetic {
@@ -442,18 +470,25 @@ Description: for Aegicare home page
 
 }
 
-#genetic .content{
+#genetic .content {
     line-height: 1.6;
     margin-top: 30px;
 }
 
-#genetic .content .row{
+#genetic .content .row {
     margin-bottom: 30px;
 }
 
-#genetic .subtitle{
+#genetic .subtitle {
     padding: 5px 10px;
     background-color: lightsalmon;
+    background-color: #1BA8B7;
+    color: white;
     text-align: center;
-    font-weight: bold;
+    font-weight: 500;
 }
+
+#genetic .geneticTable {
+    margin-top: 20px;
+}
+
