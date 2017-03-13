@@ -13,6 +13,11 @@ Description: for Aegicare home page
     margin-right: 10px;
 }
 
+#topcarousel .btn{
+    background-color: #1BA8B7;
+    border: none;
+}
+
 #home {
     padding-top: 80px;
     background-color: #f5f5f5;
@@ -22,6 +27,7 @@ Description: for Aegicare home page
 #home .light, #home .dark {
     min-height: 300px;
     padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 #home .dark {
@@ -40,6 +46,7 @@ Description: for Aegicare home page
 #home #news {
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 20px;
 }
 
 #home #news img {
@@ -102,7 +109,7 @@ Description: for Aegicare home page
 }
 
 #cooperation {
-    height: 380px;
+    /*height: 380px;*/
 }
 
 #cooperation img {
@@ -116,6 +123,7 @@ Description: for Aegicare home page
 #cooperation {
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 60px;
 
 }
 
@@ -123,7 +131,7 @@ Description: for Aegicare home page
 
 #about #topimg {
     height: 296px;
-    background: url(/static/img/about-us.jpg) no-repeat center center;
+    background: url(/static/img/about-us1.png) no-repeat center center;
 }
 
 #about .aboutitem {
@@ -491,4 +499,15 @@ Description: for Aegicare home page
 #genetic .geneticTable {
     margin-top: 20px;
 }
+
+#genetic .buywrapper{
+    text-align: center;
+}
+
+#genetic .geneticbuy{
+    background-color: #1BA8B7;
+    border: none;
+}
+
+
 
