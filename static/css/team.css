@@ -332,9 +332,9 @@ Description: for team page
 }
 
 .collaborator {
-    float: left;
-    clear: none;
-    width: 25%;
+    /*float: left;*/
+    /*clear: none;*/
+    /*width: 25%;*/
     margin-right: 8%;
 }
 
