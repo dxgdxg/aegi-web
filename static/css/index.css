@@ -293,23 +293,25 @@ Description: for Aegicare home page
 
 #terms #termswrapper {
     background-color: white;
-    padding: 40px;
+    padding: 40px 60px;
+    line-height: 2;
 }
 
 #terms .title {
     font-size: 160%;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 30px;
 
 }
 
-#terms .content #image {
-    text-align: center;
-}
+/*#terms .content #image {*/
+    /*text-align: center;*/
+/*}*/
 
-#terms .content img {
-    width: 60%;
-}
+/*#terms .content img {*/
+    /*width: 60%;*/
+/*}*/
 
 #terms .details {
     margin-top: 50px;
