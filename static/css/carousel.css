@@ -19,7 +19,7 @@
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-    height: 580px;
+    height: 600px;
     background-color: white;
 }
 
